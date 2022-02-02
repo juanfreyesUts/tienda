@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto Juan Reyes</title>
+	<meta charset="utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+</head>
+
+<body style="background-color: #FFFFFF">
+	<center>
+                    <!-- ------------------------Menu--------------------- -->
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="menu">
+  			<div class="container-fluid">
+    			<a class="navbar-brand" href="index.php">
+         <img src="images/logo.jpg" style="width: 4rem;" style="height: 3rem;">   
+          </a>
+    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      				<span class="navbar-toggler-icon"></span>
+    			</button>
+    			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        				<li class="nav-item">
+          					<a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
+        				</li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/camisas.php">Camisas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/calzado.php">Calzado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/pantalones.php">pantalones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/vestidos.php">Vestidos</a>
+                </li>
+        				<li class="nav-item">
+          					<a class="nav-link active" aria-current="page" href="pages/about.php" target="_blank">Conozcanos</a>
+        				</li>
+      				</ul>
+      				<form class="d-flex">
+        				<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        				<button class="btn btn-outline-success" type="submit">Buscar</button>
+      				</form>
+    			</div>
+  			</div>
+		</nav>
+		<br>
+
+                        <!------ Titulo de la tienda ------>
+
+		<h1>Tienda online</h1>
+
+		<br>
+
+                        <!----- Catalogo de ropa ----->
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+<form action="pages/datos.php" method="POST">
+
+	<div class="card" style="width: 18rem;">
+  		<img src="images/tenis.jpg" class="card-img-top" alt="Air jordan" style="width: 17rem">
+  		<div class="card-body">
+
+                        <!----- Tenis air jordan ----->
+
+    		<input type="hidden" value="Air jordan" name="producto"><h5>Air jordan</h5>
+    		<input type="hidden" value="299.999" name="valor"><p>$299.999</p>
+    		<h5>Talla</h5><select id="talla" name="talla">
+    			<option value="40">40</option>
+    			<option value="41">41</option>
+    			<option value="42">42</option>
+    		</select><br>
+    		<br>
+    		<select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+  		</div>
+	</div>
+
+</form>
+
+    </div>
+    <div class="col">
+<form action="pages/datos.php" method="POST">
+      <div class="card" style="width: 18rem;">
+
+                        <!----- buzos ----->
+
+        <img src="images/buz.jpg" class="card-img-top" alt="buzos">
+        <div class="card-body">
+          <input type="hidden" value="Buzo" name="producto"><h5>Buzos</h5>
+          <input type="hidden" value="119.999" name="valor"><p>$119.999</p>
+          <h5>Talla</h5><select id="talla" name="talla">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select><br>
+        <br>
+          <select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+        </div>
+    </div>
+</form>
+
+
+    </div>
+    <div class="col">
+
+<form action="pages/datos.php" method="POST">
+      
+    	<div class="card" style="width: 18rem;">
+  			<img src="images/camisa.jpg" class="card-img-top" alt="camisa">
+  			<div class="card-body">
+
+                        <!----- camisas ----->
+
+    			<input type="hidden" value="Camisas" name="producto"><h5>Camisas</h5>
+          <input type="hidden" value="99.999" name="valor"><p>$99.999</p>
+    			<h5>Talla</h5><select id="talla" name="talla">
+    			<option value="S">S</option>
+    			<option value="M">M</option>
+    			<option value="L">L</option>
+    		</select><br>
+    		<br>
+    			<select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+  			</div>
+		</div>
+</form>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+<form action="pages/datos.php" method="POST">
+
+	<div class="card" style="width: 18rem;">
+  		<img src="images/sudadera.jpg" class="card-img-top" alt="sudadera">
+  		<div class="card-body">
+
+                        <!----- sudaderas ----->
+
+    		<input type="hidden" value="Sudadera" name="producto"><h5>sudadera</h5>
+        <input type="hidden" value="98.999" name="valor"><p>$98.999</p>
+    		
+        <h5>Talla</h5><select id="talla" name="talla">
+    			<option value="S">S</option>
+    			<option value="M">M</option>
+    			<option value="L">L</option>
+    		</select><br>
+    		<br>
+    		<select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+  		</div>
+	</div>
+</form>
+
+    </div>
+
+    <div class="col">
+      
+<form action="pages/datos.php" method="POST">
+      
+    <div class="card" style="width: 18rem;">
+        <img src="images/vestido.jpg" class="card-img-top" alt="vestido" style="width: 12rem">
+        <div class="card-body">
+
+                        <!----- Vestido azul ----->
+
+          <input type="hidden" value="Vestido" name="producto"><h5>Vestido</h5>
+          <input type="hidden" value="249.999" name="valor"><p>$249.999</p>
+          
+          <h5>Talla</h5><select id="talla" name="talla">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select><br>
+        <br>
+        <select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+          <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+        </div>
+    </div>
+</form>
+
+    </div>
+
+    <div class="col">
+      
+<form action="pages/datos.php" method="POST">
+    	<div class="card" style="width: 18rem;">
+  			<img src="images/camisas.jpg" class="card-img-top" alt="camisas">
+  			<div class="card-body">
+
+                        <!----- camisetas ----->
+
+    			<input type="hidden" value="Camisetas" name="producto"><h5>Camisetas</h5>
+          <input type="hidden" value="24.999" name="valor"><p>$24.999</p>
+    			<h5>Talla</h5><select id="talla" name="talla">
+    			<option value="S">S</option>
+    			<option value="M">M</option>
+    			<option value="L">L</option>
+    		</select><br>
+    		<br>
+    			<select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+  			</div>
+		</div>
+</form>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+<form action="pages/datos.php" method="POST">
+
+  <div class="card" style="width: 18rem;">
+      <img src="images/tenisnike.jpg" class="card-img-top" alt="tenisnike">
+      <div class="card-body">
+
+                        <!----- Tenis nike ----->
+
+        <input type="hidden" value="Nike" name="producto"><h5>Tenis nike </h5>
+        <input type="hidden" value="299.999" name="valor"><p>$299.999</p>
+        
+        <h5>Talla</h5><select id="talla" name="talla">
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+        </select><br>
+        <br>
+        <select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+      </div>
+  </div>
+</form>
+
+    </div>
+
+    <div class="col">
+      
+<form action="pages/datos.php" method="POST">
+      <div class="card" style="width: 18rem;">
+        <img src="images/tacones.jpg" class="card-img-top" alt="tacones">
+        <div class="card-body">
+
+                        <!----- tacones ----->
+
+          <input type="hidden" value="Tacones" name="producto"><h5>Tacones</h5>
+          <input type="hidden" value="169.999" name="valor"><p>$169.999</p>
+          <h5>Talla</h5><select id="talla" name="talla">
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+        </select><br>
+        <br>
+          <select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+        </div>
+    </div>
+</form>
+
+    </div>
+
+    <div class="col">
+      
+<form action="pages/datos.php" method="POST">
+      <div class="card" style="width: 18rem;">
+        <img src="images/pan.jpg" class="card-img-top" alt="jeans">
+        <div class="card-body">
+
+                        <!----- Jeans para hombre ----->
+
+          <input type="hidden" value="Jeans" name="producto"><h5>Jeans</h5>
+          <input type="hidden" value="79.999" name="valor"><p>$79.999</p>
+          <h5>Talla</h5><select id="talla" name="talla">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select><br>
+        <br>
+          <select id="unidades" name="unidades" style="width: 3rem;">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <input type="submit" name="Enviar" value="Comprar" class="btn btn-primary">
+        </div>
+    </div>
+</form>
+    </div>
+  </div>
+</div>
+
+
+                        <!----- Paginacion ----->
+
+		<nav aria-label="Page navigation example">
+  			<ul class="pagination justify-content-center">
+    			<li class="page-item disabled">
+      				<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    			</li>
+    			<li class="page-item"><a class="page-link" href="#">1</a></li>
+    			<!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
+    			<li class="page-item"><a class="page-link" href="#">3</a></li>
+    			<li class="page-item">
+      				<a class="page-link" href="#">Next</a> -->
+    			</li>
+  			</ul>
+		</nav>
+
+		<br>
+
+                        <!----- footer ----->
+
+<section class="">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Vuelve pronto, esperamos que te haya gustado la pagina </span>
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white">konshudo.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+
+
+	</center>
+</body>
+</html>
