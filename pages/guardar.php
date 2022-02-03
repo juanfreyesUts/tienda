@@ -11,7 +11,7 @@
 		<br>
 		<h1>Formulario enviado</h1><br>
 		<h4>la factura ha sido enviada a su correo</h4>
-		<a href="/proyectoTiendaOnline/tienda/index.html" style="width: 12rem" type="submit" name="volver" class="btn btn-primary">Inicio</a>
+		<a href="/tienda/index.html" style="width: 12rem" type="submit" name="volver" class="btn btn-primary">Inicio</a>
 	</center>
 </body>
 </html>

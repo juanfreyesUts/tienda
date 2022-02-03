@@ -12,8 +12,8 @@
 	<center>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="menu">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/tienda/index.html">
-         <img src="/tienda/images/logo.jpg" style="width: 4rem;" style="height: 3rem;">   
+          <a class="navbar-brand" href="index.html">
+         <img src="images/logo.jpg" style="width: 4rem;" style="height: 3rem;">   
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -21,26 +21,26 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/tienda/index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/tienda/pages/camisas.php">Camisas</a>
+                    <a class="nav-link active" aria-current="page" href="pages/camisas.html">Camisas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/tienda/pages/calzado.php">Calzado</a>
+                    <a class="nav-link active" aria-current="page" href="pages/calzado.html">Calzado</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/tienda/pages/pantalones.php">pantalones</a>
+                    <a class="nav-link active" aria-current="page" href="pages/pantalones.html">pantalones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/tienda/pages/vestidos.php">Vestidos</a>
+                    <a class="nav-link active" aria-current="page" href="pages/vestidos.html">Vestidos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/tienda/pages/about.php">Conozcanos</a>
+                    <a class="nav-link active" aria-current="page" href="pages/about.html" target="_blank">Conozcanos</a>
                 </li>
               </ul>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
           </div>
